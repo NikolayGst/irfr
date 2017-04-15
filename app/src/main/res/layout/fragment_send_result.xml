@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="32dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginRight="32dp"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCountPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtYourDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Ваша скидка составляет - руб."
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="sans-serif-bold"
+            android:gravity="center_horizontal"
+            android:text="Подать заявку на обучение"
+            android:textColor="@color/blue2"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/txtFio"
+            style="@style/EditTextResult"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_fio"
+            />
+
+        <EditText
+            android:id="@+id/txtTel"
+            style="@style/EditTextResult"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_tel"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            style="@style/EditTextResult"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:hint="@string/txt_email"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_get_discount"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/getDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="sans-serif-bold"
+                android:text="получить скидку"
+                android:textColor="@color/red"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtRulesGetDicount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="правила получения скидки"
+            android:textColor="@color/blue2"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>

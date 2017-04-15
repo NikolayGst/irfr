@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_exam_select">
+
+        <TextView
+            android:id="@+id/txtNameExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:src="@drawable/mini_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/startExam"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:id="@+id/startExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/start_test_exam"
+            android:textColor="@color/red"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+</RelativeLayout>

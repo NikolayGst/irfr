@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rltTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lrBtn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_exam_select">
+
+        <ScrollView
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                  android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtTextQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtQuestion"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/color_text"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/form_weight"
+        android:paddingBottom="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/red"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/btnDoNotKhow"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Не знаю"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_below="@id/rltTest"
+        android:background="@null"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/lrBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_test"
+            android:text="I"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_test"
+            android:text="II"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_test"
+            android:text="III"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_test"
+            android:text="IV"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_test"
+            android:text="V"
+            android:textColor="@color/blue"/>
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+
+            android:background="@drawable/btn_test_gray"
+            android:text="@string/btnSkip"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
